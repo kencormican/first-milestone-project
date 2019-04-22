@@ -1,0 +1,698 @@
+/* Google fonts import */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+/* This imports google Roboto and Exo fonts, which are in common use and contrast well,  and their respectve weights*/
+
+
+
+/*Container Colours..........................*/
+
+.bg-colour-black {
+		background-color:#000;
+}
+
+.bg-colour-charcoal {
+		background-color:#4a4a4f;
+}
+
+	
+.bg-colour-white {
+		background-color:#fff;
+}
+
+.bg-colour-offwhite {
+		background-color:#fafafa;
+}
+
+
+
+
+
+
+
+/*Generic Typography Styles.................*/
+	
+.uppercase {
+    text-transform: uppercase;
+}
+
+.html, .body {
+	/* Page default Text Style */
+	font-family: Roboto, sans-serif;
+	margin:0;
+	padding:0;
+
+}
+
+
+
+
+
+/*Generic Padding & Margin Syles............*/
+
+.no-gutters {
+	
+	margin:0;
+	padding:0;
+}
+
+
+/*........................................*/
+
+/*Header Styles..............................*/
+
+	
+
+
+.header {
+	position:relative;
+}
+
+.overlay-effect-header {
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity: 0.2;
+  background-color: none;		/* #e67e22; Reserverd for orange hue if needs be */ 
+}
+.overlay-effect-logo {
+  position: absolute;
+  top: 0;
+  opacity: 0.2;
+  background-color: none;		/* #e67e22; Reserverd for orange hue if needs be */ 	
+
+}
+
+.logo {
+	margin: 0;
+	padding: 0;
+
+}
+
+.bg-light {
+	/*Change bootstrap nav defaults*/
+    background-color: #fff;
+}
+
+
+.navbar-dark .navbar-toggler {
+    border-color: #8b8e90;
+}
+
+
+.navbar-dark :hover {
+	/*Change bootstrap nav hover defaults*/
+	border-color: #dee2e6;
+	color: #dee2e6;
+}
+
+
+.navbar {
+	
+   font-family: "Exo", sans-serif;
+   font-weight: 700;
+   font-size: 1em;
+   
+
+   height: 100%;
+   text-align: right; /* drop down on collapse text alignment */
+   
+}
+
+
+.fa-home:hover {
+	/*Hover action feedback*/
+	
+	color: #8b8e90;
+}
+
+
+
+button:focus {
+	/*Removes bootstrap default orange colour on focus*/
+	
+	outline: none;
+}
+
+
+
+/* Responsive Navbar Anchor Text  */
+
+@media (min-width: 768px) {
+.nav-link {
+       font-size: 1.5em;
+	}
+}
+
+
+@media (min-width: 992px) {
+.nav-link {
+       font-size: 2em;
+	}
+}
+
+
+@media (min-width: 1280px) {
+.nav-link {
+       font-size: 2.5em;
+	}
+}
+
+
+
+/*...........................................*/
+
+
+/*Slider Styles..............................*/
+
+
+.overlay-effect-carousel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-color: #4a4a4f; 		/*Improves visibility of newsletter text*/
+}
+
+.carousel-indicators li {
+	/*Change bootstrap default to circle*/
+
+    width: 30px;
+    height: 30px;
+	border-radius: 50%;
+
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	/*Enlarge bootstrap defaults*/
+	
+    width: 50px;
+    height: 50px;
+    
+}
+
+
+/* .carousel-caption & hover animation */
+
+
+.carousel-caption  {
+    font-family: "Exo", sans-serif;
+	font-weight: 200;	
+	position: absolute;
+    bottom: 90px;
+    width: 400px;
+    color: #fafafa;
+	left: 50%;
+    text-align: center;
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.99);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: 0.3s;
+    font-size: 20px;
+
+}
+
+.carousel-caption:hover {
+    -webkit-transform: translateX(-50%) scale(1.1, 1.1);
+    transform: translateX(-50%) scale(1.1, 1.1);
+
+}
+
+
+
+.btn-news {
+/* 	center button horizontally and independent of caption */
+	font-family: "Exo", sans-serif;
+	position:absolute;
+	bottom:65px;
+	left:50%;
+	transform: translateX(-50%);
+
+}
+
+.btn-group-sm>.btn, .btn-sm {
+	/* button specificity */
+
+    border-radius: 16px;
+}
+.btn-secondary {
+    /* background-color: #33363a;		/*charcoal */
+	/* background-color: #3498db; 			/* blue */
+	/* background-color: #000; 			/* black */ 
+	background-color: #341b1b80;		/*tranparent brown hue*/
+	border: none;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #12395682;
+    border-color: #545b62;
+}	
+
+/*Newsletter Modal Styles.............................*/
+
+.news-modal-content {
+	background-size: cover;
+	position: relative;
+	overflow: hidden; 			/* required to crop bg image to form width  */
+
+}
+
+.news-modal-overlay {
+  position: absolute;
+  top: 0;
+  background-color: #fafafa;
+  opacity: 0.4;
+  
+}
+
+.news-modal-content .modal-header h5{
+
+	font-weight:bold;
+}
+
+
+.news-modal-content .modal-footer {
+	/* bring footer buttons to front */
+	z-index:1;
+}
+
+button[type="close"] {
+	/* target modal close button */
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #4a4a4f;
+    font-weight: bold;
+    background-color: #3c313147;
+    border-radius: 16px;
+}
+
+
+
+
+/*...........................................*/
+
+
+/*Section Styles.............................*/
+
+
+.section {
+	padding: 50px;
+	text-align: center;
+}
+
+
+/* Responsive Section Text  */
+
+.section-heading {
+
+	font-family: "Exo", sans-serif;
+	font-weight: 600;
+	font-size: 1.5em;
+
+}		
+
+.section-text {
+	
+	font-size:1.3em; 
+	
+}
+
+
+@media (min-width: 768px) {
+.section-heading {
+       font-size: 2em;
+	}
+}
+
+
+@media (min-width: 992px) {
+.section-heading {
+       font-size: 3em;
+	}
+}	
+
+
+@media (min-width: 768px) {
+.section-text {
+       font-size: 1.5em;
+	}
+}
+
+
+@media (min-width: 992px) {
+.section-text{
+       font-size: 2em;
+	}
+}	
+
+/*...........................................*/
+
+/*Article Styles...........................*/
+
+
+
+.poster-item {
+	background-size: cover;
+	position: relative;
+	overflow: hidden; 			/* required to keep hover transform within original image */
+	margin: 0 auto;
+
+}   
+
+
+.overlay-effect-book {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-color: #525252;	/*charcoal*/ 	
+
+}
+
+
+.overlay-effect-look {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.2;
+  background-color: #525252;	/*charcoal*/ 	
+
+}
+
+.overlay-effect-listen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.2;
+  background-color: #525252;	/*charcoal*/ 	
+
+}
+
+
+.overlay-effect-about {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-color: #525252;	/*charcoal*/ 	
+
+}
+
+.poster-item-inner {
+
+	transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.poster-item .img-fluid {
+		opacity: 0.4;
+}
+
+.poster-item:hover  .poster-item-inner {
+	-webkit-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+
+}
+
+
+
+
+.poster-item a{
+	font-family: "Exo", sans-serif;
+	font-weight: 600;
+	font-size: 3em;
+	color: #fafafa; 		/* off-white anchor text */
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.99);
+}	
+	
+.centered {					/* center aligning anchor text */
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+/* Responsive Poster Text  */
+
+
+@media (min-width: 768px) {
+.poster-item a {
+       font-size: 2em;
+	}
+}
+
+
+@media (min-width: 992px) {
+.poster-item a{
+       font-size: 3em;
+	}
+}	
+
+/*...........................................*/
+
+
+
+
+/*Footer Styles...........................*/
+
+.ftoverlaycontainer {
+	position:relative;
+
+}
+
+.overlay-effect-footer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.2;
+  background-color: none;		/* Reservered for coloured overlay */
+}  
+
+.footer {
+
+	text-align:center;
+	
+}
+
+
+	
+.footer-icons {
+    padding: 30px 15px;
+	max-width: 75px;
+
+}
+
+.footer-icons a {
+	padding: 5px;
+}
+ 
+ 
+.footer-icons a i {
+    width: 50px;
+    height: 50px;
+    padding: 12px 0;
+    border-radius: 25%; 						
+    font-size: 29px; 							
+    line-height: 29px;						
+    text-align: center;
+
+    color: #000; 							
+    background: #fafafa; 						
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+
+
+.footer-icons a i:hover {
+	/* Social icon responsive hover */
+	background-color: #83838e47;
+	color:#fafafa;
+}
+
+/*...........................................*/
+
+
+
+
+/*Booking Page Styles----------------------- */
+
+
+.booking-outer {	
+	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.booking-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 20px;
+
+
+}
+
+.booking-heading h4 {
+	margin-top: 30px;
+}
+
+.booking-request {
+	
+	/* target form */
+	
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+
+
+.input-group-text {
+	
+	/* targets datepicker add-on */
+	font-size: 25px;
+	background-color: #e9ecef;
+}
+
+
+button[type="submit"] {
+	
+	/* target form submit button */
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #4a4a4f;
+	font-weight: bold;
+    background-color: #3c313147;
+	border-radius: 16px;
+}
+
+
+/*...........................................*/
+
+
+
+
+/*Audio Page Styles------------------------- */
+
+/*Coding Snippet---------------------------- */
+
+
+.audio-player {
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:50px;
+  padding-bottom: 50;
+}
+
+.audio-player i {
+  font-size: 24vw;
+}
+#next-button {
+    font-size: 18vw;
+}
+
+@media screen and (min-width:560px) {
+  .audio-player i {
+    font-size: 134px;
+  }
+  #next-button {
+    font-size: 100px;
+  }
+}
+
+#now-playing {
+  display: none;
+}
+
+.progress {
+  overflow: visible;
+}
+
+/* Removed */
+/* li.active:before {
+  font-family: "Material Icons";
+  content: "\e037";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-size: 1.5rem;
+} */
+
+.ui-slider-handle {
+  border-radius: 50%;
+}
+
+
+/* Custom Styles */
+
+
+.audio-gallery-outer {	
+	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.3);
+    border-radius: 10px;
+	padding-bottom:50px;
+}
+
+.text-primary {
+    color: #495057!important;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #495057;
+    border-color: #495057;
+}
+
+.border-primary {
+    border-color: #495057!important;
+}
+
+.card-title {
+	font-family: "Exo", sans-serif;
+    font-weight: 600;
+}
+
+.progress-bar {
+	background-color: #fff;
+}
+
+
+.ui-state-hover, 
+.ui-widget-content 
+.ui-state-hover, 
+.ui-widget-header 
+.ui-state-hover, 
+.ui-state-focus, 
+.ui-widget-content 
+.ui-state-focus, 
+.ui-widget-header 
+.ui-state-focus, 
+.ui-button:hover, 
+.ui-button:focus {
+	background: #495057;
+}
+
+/* .audio-player-inner{
+	display:block;
+	margin-bottom:50px;
+} */
