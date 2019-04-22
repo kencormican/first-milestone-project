@@ -5,12 +5,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+
 	<!--Bootstrap 4 CDN-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<!-- Font Awesome CDN -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+	<!-- JQuery Audio Playlist CDNs & Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css">
+
 	<!-- /Link to Stylesheet -->	
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">	
 	<title>Monkees | Audio Page</title>
 
 </head>
@@ -109,10 +117,54 @@
 
 			</div>
 		</div>
-	<section class= "section bg-colour-offwhite">
-		<div class="container-fluid">
-				<div class="row">
+	<section class= "section bg-colour-white">
+		<div class="container-fluid audio-gallery-outer bg-colour-offwhite">
+			<div class="row justify-content-center">
+				<div class="col audio-gallery-heading">
+					<h3 class="uppercase text-center">Audio Gallery</h3>
 				</div>
+			</div>
+
+			<div class="col audio-player card">
+				<div class="card">
+					<div class="card-body">
+						<h2 class="card-title col text-center">Monkees Playlist</h2>
+						<div class="row align-items-center mt-4 mb-3 mx-0">
+						  <i id="play-button"class="material-icons play-pause text-primary mr-2" aria-hidden="true">play_circle_outline</i>
+						  <i id="pause-button"class="material-icons play-pause d-none text-primary mr-2" aria-hidden="true">pause_circle_outline</i>
+						  <i id="next-button"class="material-icons text-primary ml-2 mr-3" aria-hidden="true">skip_next</i>
+						  <div class="col ml-auto rounded-circle border border-primary p-1">
+							<img id="thumbnail" class="img-fluid rounded-circle" src="assets/images/album-covers/album2.jpg" alt="">
+						  </div>
+						</div>
+						<div class="p-0 m-0" id="now-playing">
+						  <p class="font-italic mb-0">Now Playing: </p>
+						  <p class="lead" id="title"></p>
+						</div>
+						<div class="progress-bar progress col-12 mb-3">
+						</div>
+					</div>
+					<ul class="playlist list-group list-group-flush">
+						<li audio_url="assets/audio/clarksville.mp3"
+						img_url="assets/images/album-covers/clarksville.jpg"
+						class="active list-group-item playlist-item">
+						Last Train to Clarksville</li>
+						<li audio_url="assets/audio/im-a-believer.mp3"
+						class="list-group-item playlist-item"
+						img_url="assets/images/album-covers/im-a-believer.jpg">
+						I'm a Believer</li>
+						<li audio_url="assets/audio/steppin-stone.mp3"
+						class="list-group-item playlist-item"
+						img_url="assets/images/album-covers/steppin-stone.jpg">
+						Steppin' Stone</li>
+						<li audio_url="assets/audio/daydream-believer.mp3"
+						class="list-group-item playlist-item"
+						img_url="assets/images/album-covers/daydream-believer-1.jpg">
+						Daydream Believer</li>
+					</ul>
+				</div>
+				<audio id="audio-player" class="d-none" src="" type="audio/mp3" controls="controls"></audio>
+			</div>
 		</div>				
 	</section>
 	<article class="container-fluid no-gutters">
@@ -234,12 +286,18 @@
 
 		
 	<!--JQuery, cloudflare & Bootstrap JS CDNs-->
-	<!-- Needed for Carousel to function correctly-->
+	<!-- Needed for Carousel to function correctly & for audio playlist-->
+	<!-- Carousel Only-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<!--/JQuery, cloudflare & Bootstrap JS CDNs-->
 
+	<!-- Audio Playlist Only -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+	<script src="js/jquery-ui-slider.js" charset="utf-8"></script>
+	<script src="js/audioPlayer.js" charset="utf-8"></script>
+	
+	
 </body>
 
 </html>
