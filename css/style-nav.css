@@ -36,6 +36,11 @@
 }
 
 
+
+
+
+
+
 /*Generic Typography Styles.................*/
 	
 .uppercase {
@@ -49,9 +54,6 @@
 	padding:0;
 
 }
-
-
-
 
 
 /*Generic Padding & Margin Syles............*/
@@ -105,6 +107,7 @@
 
 .navbar-dark .navbar-toggler {
     border-color: #8b8e90;
+	
 }
 
 
@@ -148,21 +151,21 @@ button:focus {
 
 @media (min-width: 768px) {
 .nav-link {
-       font-size: 1.5em;
+       font-size: 1.8em;
 	}
 }
 
 
 @media (min-width: 992px) {
 .nav-link {
-       font-size: 2em;
+       font-size: 2.5em;
 	}
 }
 
 
 @media (min-width: 1280px) {
 .nav-link {
-       font-size: 2.5em;
+       font-size: 3em;
 	}
 }
 
@@ -315,7 +318,7 @@ button[type="close"] {
 
 
 .section {
-	padding: 0px;
+	padding: 50px;
 	text-align: center;
 }
 
@@ -548,13 +551,12 @@ button[type="close"] {
 
 
 
-
 /*Booking Page Styles----------------------- */
 
 
 .booking-outer {	
-
-	position:relative;
+	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.3);
+    border-radius: 10px;
 }
 
 .booking-heading {
@@ -570,9 +572,16 @@ button[type="close"] {
 	margin-top: 30px;
 }
 
-
-/* target form */
+.booking-request {
 	
+	/* target form */
+	
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+
 
 .input-group-text {
 	
@@ -592,37 +601,7 @@ button[type="submit"] {
     background-color: #3c313147;
 	border-radius: 16px;
 }
-	
-.booking-request {
-	
-    padding-top: 10px;
-	margin: 0 auto;
-}
 
-
-
-@media (min-width: 992px) {
-.booking-form {
-       max-width: 70%;
-	}
-}	
-
-/*target booking border*/
-
-@media (min-width: 560px) {
-.section {
-       padding:50px;
-	}
-}	
-
-/*target booking border*/
-
-@media (min-width: 560px) {
-.booking-outer {
-	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.3);
-    border-radius: 10px;
-	}
-}	
 
 /*...........................................*/
 
@@ -733,152 +712,3 @@ button[type="submit"] {
 	background: #495057;
 }
 
-/*...........................................*/
-
-/*Look Styles................................*/
-
-.video-gallery-outer {	
-	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.3);
-    border-radius: 10px;
-	padding-bottom:50px;
-}
-
-
-.video-gallery-heading {
-}
-
-
-.card-text {
-	text-align:left;
-}
-
-.duration {
-	text-align:right;
-}
-
-/*...........................................*/
-
-/*About Styles................................*/
-
-.about-gallery-outer {	
-	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.3);
-    border-radius: 10px;
-	padding-bottom:50px;
-}
-
-
-.about-heading {
-}
-
-
-/*Article Styles...........................*/
-
-
-
-
-.about-poster-nav .overlay-effect-book {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.5;
-  background-color: #e67e22;	/*orange*/
-
-}
-
-
-.about-poster-nav .overlay-effect-look {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.2;
-  background-color: #9b59b6; 	/*purple*/
-
-}
-
-.about-poster-nav .overlay-effect-listen {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.2;
-  background-color: #3498db; 	/*blue*/
-
-}
-
-
-.about-poster-nav .overlay-effect-about {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.5;
-  background-color: #525252;	/*charcoal*/ 	
-
-}
-
-
-
-.about-poster-nav .poster-item a{
-	font-size: 1.5em;
-	text-align:center;
-
-}	
-	
-/* Responsive Poster Text  */
-
-
-@media (min-width: 768px) {
-.about-poster-nav .poster-item a {
-       font-size: 2em;
-	}
-}
-
-
-@media (min-width: 992px) {
-.about-poster-nav .poster-item a{
-       font-size: 2.5em;
-	}
-}	
-
-
-/*About Modal Styles.............................*/
-
-.about-modal-content {
-	background-size: cover;
-	position: relative;
-	overflow: hidden; 			/* required to crop bg image to form width  */
-	
-}
-
-/* Reserved for overlay effect */
-/* .about-modal-overlay {
-  position: absolute;
-  top: 0;
-  background-color: #fafafa;
-  opacity: 0.4;
-  
-} */
-
-.about-modal-content .modal-header h5{
-
-	font-weight:bold;
-}
-
-
-.about-modal-content .modal-footer {
-	/* bring footer buttons to front */
-	z-index:1;
-}
-
-
-/*...........................................*/
-
-
-
-/*...........................................*/

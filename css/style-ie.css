@@ -539,12 +539,17 @@ button[type="close"] {
 
 .footer-icons a i:hover {
 	/* Social icon responsive hover */
-	background-color: #83838e47;
+	background-color: rgba(131,131,142,0.28);
 	color:#fafafa;
 }
 
-/*...........................................*/
+.footer-icons a:hover {
+	/* Social icon hover on ie avoiding blue bootstrap default */
 
+	color:black;
+}
+
+/*...........................................*/
 
 
 
@@ -623,6 +628,10 @@ button[type="submit"] {
     border-radius: 10px;
 	}
 }	
+
+ 
+
+
 
 /*...........................................*/
 

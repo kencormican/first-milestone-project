@@ -71,14 +71,21 @@ Github Pages was then used to host and deploy the initial site constructs at the
 ### Testing
 
 During all phases of development I used Chrome Devtools to test the responsive design functionality.
+For instance I noted that the Nav bar text wrapped at various before and after certain breakpoints so 
+used media queries to scale the fonts and transition more smoothly from one breakpoint to another.
+
 I also created multiple discrete webpages to test colour schemes and resposive layouts.
 The ones that were uploaded to github can be accessed at:
 
 - https://kencormican.github.io/first-milestone-project/index-coloured.html
 - https://kencormican.github.io/first-milestone-project/index-nav.html
 
-Once the webpages have been completed I intend on running trials on Opera, Edge, IE-11 and Firefox to confirm functionality 
-is consistent across the majority of web browsers.
+Once the webpages were completed I ran trials using Opera, Edge, IE-11 and Firefox to confirm functionality, html, css & boostrap rendering was consistent across  
+various web browsers.
+This enabled me to identify inconsistent flexbox display behaviour for the section element in the booking page when using ie version 11.
+The ambnormal behaviour resulted in the form input elements aligning to the right of the page as opposed to the center.
+I overcame the problem by adding an addtional container and adjusting the nested rows and columns.
+During this process I also decided to change the section & booking request row margins and padding for smaller breakpoints under 560px using media queries.
 
 		
 ###		Code samples referenced include
