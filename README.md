@@ -70,8 +70,10 @@ Github Pages was then used to host and deploy the initial site constructs at the
 
 ### Testing
 
+#### Responsive Design
+
 During all phases of development I used Chrome Devtools to test the responsive design functionality.
-For instance I noted that the Nav bar text wrapped at various before and after certain breakpoints so 
+For instance I noted that the Nav bar text wrapped at before and after certain breakpoints so 
 used media queries to scale the fonts and transition more smoothly from one breakpoint to another.
 
 I also created multiple discrete webpages to test colour schemes and resposive layouts.
@@ -80,12 +82,29 @@ The ones that were uploaded to github can be accessed at:
 - https://kencormican.github.io/first-milestone-project/index-coloured.html
 - https://kencormican.github.io/first-milestone-project/index-nav.html
 
+#### Element Functionaly
+
+I initially used iframe container elements for the Video gallery, however, I encountered difficulty preventing the autoplay function 
+and ultimately decided to change to a video element to overcome the problem.
+
+#### Browser Rendering
+
 Once the webpages were completed I ran trials using Opera, Edge, IE-11 and Firefox to confirm functionality, html, css & boostrap rendering was consistent across  
 various web browsers.
 This enabled me to identify inconsistent flexbox display behaviour for the section element in the booking page when using ie version 11.
 The ambnormal behaviour resulted in the form input elements aligning to the right of the page as opposed to the center.
 I overcame the problem by adding an addtional container and adjusting the nested rows and columns.
 During this process I also decided to change the section & booking request row margins and padding for smaller breakpoints under 560px using media queries.
+
+I also noted that for IE and Edge browsers they did not recognise the 8xdigit hex colour values I used when styling various buttons and the carousel caption text.
+The addition 2 digits associated with the opacity of the colour were recognised by Opera, Firefox & Chrome but not by IE or Edge.
+To overcome the issue on IE & Edge I used Chrome Devtools to identify the RGBa values corresponding to the 8Digit Hex codes and applied where relevant.
+For instance #83838e47 which was a transparent charcoal grey I initially used to make the Social Icons responsive on hover has an RGba equivalent of RGBa (131,131,142,0.28)
+Also the hex value #341b1b80 which I initially used as a transparent brown wrapper for the Carousel Caption was changed to RGBa (52,27,27,0.502)
+The RGBa values were recognised by IE & Edge so the colour rendering was made consistent across all browsers.
+
+Finally I noted the social icons displayed blue (#007bf) line to their right on hover when using IE which appeared to be a boostrap default.
+I removed it by targeted the footer icon anchor element on hover and changing the text colour to black.
 
 		
 ###		Code samples referenced include

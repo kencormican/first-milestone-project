@@ -206,7 +206,7 @@ button:focus {
 
 
 .carousel-caption  {
-	background-color:#341b1b80;
+	background-color:rgba(52,27,27,0.502); /*tranparent brown hue hex #341b1b80 changed to rgba for ie*/
     font-family: "Exo", sans-serif;
 	font-weight: 200;	
 	position: absolute;
@@ -257,13 +257,13 @@ button:focus {
     /* background-color: #33363a;		/*charcoal */
 	/* background-color: #3498db; 			/* blue */
 	/* background-color: #000; 			/* black */ 
-	background-color: #341b1b80;		/*tranparent brown hue*/
+	background-color: rgba(52,27,27,0.502);		/*tranparent brown hue hex #341b1b80 changed to rgba for ie*/
 	border: none;
 }
 
 .btn-secondary:hover {
     color: #fff;
-    background-color: #12395682;
+    background-color: rgba(18, 57, 86, 0.5098039215686274); /* #12395682 changed to rgba for ie */
     border-color: #545b62;
 }	
 
@@ -301,7 +301,7 @@ button[type="close"] {
     margin-bottom: 20px;
     color: #4a4a4f;
     font-weight: bold;
-    background-color: #3c313147;
+    background-color: rgba(60, 49, 49, 0.2784313725490196); /* #3c313147 changed for rgba for ie */
     border-radius: 16px;
 }
 
@@ -536,12 +536,17 @@ button[type="close"] {
 	-o-transition: all 0.5s ease-in-out;
 }
 
-
 .footer-icons a i:hover {
 	/* Social icon responsive hover */
-	background-color: #83838e47;
+	background-color: rgba(131,131,142,0.28); /* Hex Colour #83838e47 changed to RGBa value for IE rendering */
 	color:#fafafa;
 }
+
+.footer-icons a:hover {
+
+	color: #000; /* target boostrap default #007bff affecting ie on hover */
+}
+
 
 /*...........................................*/
 
@@ -589,7 +594,7 @@ button[type="submit"] {
     margin-bottom: 20px;
     color: #4a4a4f;
 	font-weight: bold;
-    background-color: #3c313147;
+    background-color: rgba(60, 49, 49, 0.2784313725490196);		/* #3c313147 changed to rgba for ie*/
 	border-radius: 16px;
 }
 	
