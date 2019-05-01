@@ -599,16 +599,24 @@ button[type="submit"] {
 }
 	
 .booking-request {
-	
-    padding-top: 10px;
+	padding-top: 10px;
 	margin: 0 auto;
+
 }
 
+.iewrap-fix { 
+	
+	/* ie flex wrap issue resolve */
+	flex:1 1 100%; 
+	flex-flow:row wrap; 
+
+}
 
 
 @media (min-width: 992px) {
 .booking-form {
        max-width: 70%;
+	   
 	}
 }	
 
@@ -617,6 +625,7 @@ button[type="submit"] {
 @media (min-width: 560px) {
 .section {
        padding:50px;
+
 	}
 }	
 

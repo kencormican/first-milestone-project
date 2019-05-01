@@ -605,10 +605,17 @@ button[type="submit"] {
 }
 
 
+.iewrap-fix { 
+	
+	/* ie flex wrap issue resolve */
+	flex:1 1 100%; 
+	flex-flow:row wrap; 
+
+}
 
 @media (min-width: 992px) {
 .booking-form {
-       max-width: 70%;
+       max-width: 70%; 
 	}
 }	
 

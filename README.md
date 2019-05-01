@@ -89,11 +89,11 @@ and ultimately decided to change to a video element to overcome the problem.
 
 #### Browser Rendering
 
-Once the webpages were completed I ran trials using Opera, Edge, IE-11 and Firefox to confirm functionality, html, css & boostrap rendering was consistent across  
-various web browsers.
+Once the webpages were completed I ran trials using Opera, Edge, IE-11 and Firefox to confirm functionality, html, css & boostrap rendering was consistent across various web browsers.
 This enabled me to identify inconsistent flexbox display behaviour for the section element in the booking page when using ie version 11.
+Per stackoverflow url below the issue appears to be a bug associated max-width config applied to nested elements using flex display. 
 The ambnormal behaviour resulted in the form input elements aligning to the right of the page as opposed to the center.
-I overcame the problem by adding an addtional container and adjusting the nested rows and columns.
+I overcame the problem by adding an addtional class to the booking-form column that specifically targetted the bug.
 During this process I also decided to change the section & booking request row margins and padding for smaller breakpoints under 560px using media queries.
 
 I also noted that for IE and Edge browsers they did not recognise the 8xdigit hex colour values I used when styling various buttons and the carousel caption text.
@@ -124,6 +124,10 @@ Bootstrap 4 JQuery Audio Playlist
 Video snippets
 - https://getbootstrap.com/docs/4.3/examples/album/
 - https://mdbootstrap.com/plugins/jquery/video/
+
+IE11 Flexbox Issue Resolution
+- https://github.com/philipwalton/flexbugs/issues/170
+
 
 ###	Content
 
