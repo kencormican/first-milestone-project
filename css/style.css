@@ -81,13 +81,13 @@
   right:0;
   bottom:0;
   opacity: 0.2;
-  background-color: none;		/* #e67e22; Reserverd for orange hue if needs be */ 
+ /*  background-color: none;	 */	/* #e67e22; Reserverd for orange hue if needs be */ 
 }
 .overlay-effect-logo {
   position: absolute;
   top: 0;
   opacity: 0.2;
-  background-color: none;		/* #e67e22; Reserverd for orange hue if needs be */ 	
+/*   background-color: none;	 */	/* #e67e22; Reserverd for orange hue if needs be */ 	
 
 }
 
@@ -295,7 +295,7 @@ button:focus {
 	z-index:1;
 }
 
-button[type="close"] {
+button[type="button"] {
 	/* target modal close button */
     margin-top: 15px;
     margin-bottom: 20px;
@@ -496,7 +496,7 @@ button[type="close"] {
   left: 0;
   right: 0;
   opacity: 0.2;
-  background-color: none;		/* Reservered for coloured overlay */
+  /* background-color: none; */		/* Reservered for coloured overlay */
 }  
 
 .footer {

@@ -91,7 +91,7 @@ and ultimately decided to change to a video element to overcome the problem.
 
 Once the webpages were completed I ran trials using Opera, Edge, IE-11 and Firefox to confirm functionality, html, css & boostrap rendering was consistent across various web browsers.
 This enabled me to identify inconsistent flexbox display behaviour for the section element in the booking page when using ie version 11.
-Per stackoverflow url below the issue appears to be a bug associated max-width config applied to nested elements using flex display. 
+Per Github url below the issue appears to be a bug associated max-width config applied to nested elements using flex display. 
 The ambnormal behaviour resulted in the form input elements aligning to the right of the page as opposed to the center.
 I overcame the problem by adding an addtional class to the booking-form column that specifically targetted the bug.
 During this process I also decided to change the section & booking request row margins and padding for smaller breakpoints under 560px using media queries.
@@ -105,6 +105,12 @@ The RGBa values were recognised by IE & Edge so the colour rendering was made co
 
 Finally I noted the social icons displayed blue (#007bf) line to their right on hover when using IE which appeared to be a boostrap default.
 I removed it by targeted the footer icon anchor element on hover and changing the text colour to black.
+
+#### HTML/CSS Syntax Validation
+
+Finally, I validated the html and css code syntax/structure using the below W3C validators, amending errors where they were highlighted.
+- https://jigsaw.w3.org/css-validator/#validate_by_input
+- https://validator.w3.org/#validate_by_input
 
 		
 ###		Code samples referenced include

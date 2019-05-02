@@ -23,13 +23,11 @@
 
 <!-- black background set as default bg for body to provide continuity of experience on burger expand and following footer element -->
 
-	<header>
-
-		<div class="container-fluid">
-				
+	<header class="container-fluid">
+		
 		<div class="row">
 				<div class="logo col-8 col-sm-4 w-100">
-					<div class="overlay-effect-header"></div> <!-- Reserved for overlay effect->
+					<div class="overlay-effect-header"></div> <!-- Reserved for overlay effect-->
 						
 					<!--col-xs changed to col in rls 4.0-->
 					<img src="assets/images/logos/logo-white-on-black.jpg" class="img-fluid" alt="Responsive image">
@@ -44,8 +42,8 @@
 							<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 							<!-- burger nav icon right & top aligned -->							
 								<li class="nav-item active">
-									<a class="nav-link" href="index.html"><i class="fas fa-home"aria-hidden="true"></i></a>
-									<span class="sr-only">Home</span></a>
+									<a class="nav-link" href="index.html"><i class="fas fa-home" aria-hidden="true"></i></a>
+									<span class="sr-only">Home</span>
 									<!-- Home icon  with accessibility options applied -->
 								</li>
 								<li class="nav-item">
@@ -69,7 +67,7 @@
 		<div class="container-fluid no-gutters">
 			
 			<div class= "row">
-				<div id="carouselExampleIndicators" class="col-12 carousel slide" data-interval="3000" data-pause="hover" data-ride="carousel"> <!-- pause interval 5sec -->
+				<div id="carouselExampleIndicators" class="col-12 carousel slide" data-interval="5000" data-pause="hover" data-ride="carousel"> <!-- pause interval 5sec -->
 				  <ol class="carousel-indicators">
 					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -83,9 +81,9 @@
 						<img class="d-block w-100" src="assets/images/1280x540/book-carousel-1.jpg" alt="First slide">
 						<!-- Carousel Text and Link -->
 						<div class="carousel-caption no-gutters d-none d-md-block">
-							<span><h3>NEWSLETTER</h3>
+							<h3>NEWSLETTER</h3>
 							<p>Feeling Nostalgic?......New to the Monkees and want to know more?
-							Subscribe to our newsletter!!</p></span>
+							Subscribe to our newsletter!!</p>
 						</div>
 						<div class="btn-news d-none d-md-block">
 							<button class="btn btn-sm btn-secondary uppercase" data-toggle="modal" data-target="#SubscribeModal">Subscribe!</button>
@@ -194,6 +192,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 	</article>				
 	<footer class= "bg-colour-black">		
 		<div class="container-fluid ftoverlaycontainer no-gutters">
@@ -201,31 +200,31 @@
 			<div class="row justify-content-center"> <!-- center aligns icons in row -->
 
 				<div class="col-sm-1 footer-icons">
-							<a target="_blank" href="https://www.facebook.com/TheMonkees/" alt="">
+							<a target="_blank" href="https://www.facebook.com/TheMonkees/">
 								<i class="fab fa-facebook-f" aria-hidden="true"></i>
 								<span class="sr-only">Facebook</span>
 							</a>
 	            </div>						
 				<div class="col-sm-1 footer-icons">				
-							<a target="_blank" href="https://twitter.com/themonkees?lang=en" alt="">
+							<a target="_blank" href="https://twitter.com/themonkees?lang=en">
 								<i class="fab fa-twitter" aria-hidden="true"></i>
 								<span class="sr-only">Twitter</span>
 							</a>
                 </div>
 				<div class="col-sm-1 footer-icons">
-							<a target="_blank" href="https://www.pinterest.ie/search/pins/?q=monkees&rs=typed" alt="">
+							<a target="_blank" href="https://www.pinterest.ie/search/pins/?q=monkees&rs=typed">
 								<i class="fab fa-pinterest" aria-hidden="true"></i>
 								<span class="sr-only">Pinterest</span>
 							</a>
 				</div>
 				<div class="col-sm-1 footer-icons">
-							<a target="_blank" href="https://www.instagram.com/monkeesfanpage/?hl=en" alt="">
+							<a target="_blank" href="https://www.instagram.com/monkeesfanpage/?hl=en">
 								<i class="fab fa-instagram" aria-hidden="true"></i>
 								<span class="sr-only">Instagram</span>
 							</a>
                 </div>
 				<div class="col-sm-1 footer-icons">				
-							<a target="_blank" href="https://www.youtube.com/user/themonkees" alt="">
+							<a target="_blank" href="https://www.youtube.com/user/themonkees">
 								<i class="fab fa-youtube" aria-hidden="true"></i>
 								<span class="sr-only">Youtube</span>
 							</a>
@@ -237,7 +236,7 @@
 	
 	
 	<!-- Newsletter Modal -->
-	
+		
     <div class="modal fade" id="SubscribeModal" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content news-modal-content">
@@ -245,9 +244,9 @@
 					<img src="assets/images/modals/newsletter/newsletter-2.jpg" class="img-fluid w-100" alt="newsletter">
 				</div>
                 <div class="modal-header">
-                    <h5 class="modal-title" id="myModalLabel">Subscribe to The Monkees newsletter!</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  </div>
+                    <h5 class="modal-title" id="MyModalLabel">Subscribe to The Monkees newsletter!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
                 <div class="modal-body news-modal-body">
                     <form>
                         <div class="form-group">
@@ -266,7 +265,7 @@
 					</form>	
 				</div>			
 				<div class="modal-footer">
-					<button type="close" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
 					<button type="submit" class="btn btn-outline-dark">Sign Up!</button>
                 </div>
             </div>
