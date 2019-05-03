@@ -29,56 +29,58 @@ I decided to integrate functionality from each of the web pages into my design.
 I particularly liked the layout of the high kings website but felt the home page was too busy.
 I also liked the dark theme of the Byrds webpage and the use of images and hover action from the kinks webpage.	
 		
-Ultimately I decided to use multiple pages segmeneted thematically into descrete functions, similar to the Resume mini project.
+Ultimately I decided to use multiple pages segmeneted thematically into descrete functions, similar to the Resume mini project described in the UX tutorials.
 I felt there was too much information to be provided from within a single page.  Something that would result in an overwhelming user experience.
 		
-I tried several colour schemes but ultimately felt a dark theme with greyscale carousel and band memeber navs worked best. Note* the index-coloured.html page included gives a flavour of a coloured theme.
+I tried several colour schemes but ultimately felt a dark theme with greyscale carousel and band memeber navs worked best. 
+Note* the index-coloured.html page included gives a flavour of a coloured theme I tried before deciding upon the black/Greyscale theme.
 		
-Alot of what I decided upon depended on the images and icons I found online.  For instance, I initially tried 800x600 images for the carousel but dropped them for 1280x540 images because they didn't facilitate progressive disclosure.
+Alot of what I decided upon depended on the images and icons I found online.  
+For instance, I initially tried 800x600 images for the carousel but dropped them for 1280x540 images because they didn't facilitate progressive disclosure.
 		
 ###		Development Process
 
 The Balsamiq mockup tool was used to create the initial wireframe templates.
 
-The Main Page was created using the Bootstrap4 Grid System, Default Navs, Default Carousel & Fontawesome Icons
-The elements were then styled to my preffered theme using CSS.
+The Main Page was created using the Bootstrap 4 Grid System, Default Navs, Default Carousel & Fontawesome Icons
+The elements were then styled to my preferred theme using CSS.
 I noted the absence of Glyphicons in Bootstarp 4 and the difference apporach to the Nav Toggle & Collapse functions.
 I used modals with band image overlays for the the newsletter subscription and about sections.
 		
 For the Book Now Page I used a standard bootstrap 4 form template which I then modified using CSS to adhere to website template.
-I also added a datepicker faciliaty using html.
+I also added a datepicker facilitate using html.
 		
 For the audio page I decided upon a JQuery playlist as is it allowed for the inclusion of Album graphics and was responsive.
 I then personalised the theme using DevTools and CSS.
 
-For the Video Gallery page I used straighforward Bootstrap 4 snippets then personalised further with CSS.
+For the Video Gallery page I used straighforward Bootstrap 4 album snippets in conjunction with video elements, then personalised further with CSS.
 
 
 ### Deployment
 
 Notepad++ run on my local windows based machine was used in conjunction with the Chrome browser to develop the initial Bootstrap based layout for the index.html webpage.
 This was then customised further using Chrome Devtools and CSS.
-Once comfortable with the page structure and layout I applied the baseline theme to booking, look, listen and about.html pages.
+Once comfortable with the page structure and layout I applied the baseline theme to the booking, look, listen and about.html pages.
 Note* Discrete  images were used for the carousel on each of the web pages.
 The files were uploaded to the Cloud9 IDE, which I used for version control, and an initial git commit was performed.
 The Cloud9 repo was then bound to a remote github repo and they were synchronised.
 The newsletter modal, booking submit form, listen and READme.md files were then completed and a second commit was initialised.
+
 Github Pages was then used to host and deploy the site at the following url:
 
 - https://kencormican.github.io/first-milestone-project/
 
-Please Note* After several commits to the local Cloud9 git repo and the initial push to GitHub I made some modifications to the ReadMe.md file directly on Github.
+Please Note* that after several commits to the local (Cloud9) and remote (Github) repos I made some modifications to the ReadMe.md file directly on Github.
 This created a conflict between the local and remote repos.
 After several failed attempts to resolve the conflict using git commands I decided the cleanest and quickest way to resolve the issue was to delete the Cloud9 worskpace and reload it again from my local machine copy.
-This resulted in several commits being lost.
+This resulted in some of the commit granularity being lost.
 
 ### Testing
 
 #### Responsive Design
 
 During all phases of development I used Chrome Devtools to test the responsive design functionality.
-For instance I noted that the Nav bar text wrapped at before and after certain breakpoints so 
-used media queries to scale the fonts and transition more smoothly from one breakpoint to another.
+For instance I noted that the Navbar text wrapped  before and after certain breakpoints so used media queries to scale the fonts and transition more smoothly from one breakpoint to another.
 
 I also created multiple discrete webpages to test colour schemes and responsive layouts.
 The ones that were uploaded to github can be accessed at in the test directory:
@@ -98,7 +100,7 @@ and ultimately decided to change to a video element to overcome the problem.
 Once the webpages were completed I ran trials using Opera, Edge, IE-11 and Firefox to confirm functionality, html, css & boostrap rendering was consistent across various web browsers.
 This enabled me to identify inconsistent flexbox display behaviour for the section element in the booking page when using ie version 11.
 Per Github url below the issue appears to be a bug associated max-width config applied to nested elements using flex display. 
-The ambnormal behaviour resulted in the form input elements aligning to the right of the page as opposed to the center.
+The abnormal behaviour resulted in the form input elements aligning to the right of the page as opposed to the center.
 I overcame the problem by adding an addtional class to the booking-form column that specifically targetted the bug.
 During this process I also decided to change the section & booking request row margins and padding for smaller breakpoints under 560px using media queries.
 
@@ -114,7 +116,7 @@ I removed it by targeted the footer icon anchor element on hover and changing th
 
 #### HTML/CSS Syntax Validation
 
-Finally, I validated the html and css code syntax/structure using the below W3C validators, amending errors where they were highlighted.
+Prior to submission I validated the html and css code syntax/structure using the below W3C validators, amending errors where they were highlighted.
 - https://jigsaw.w3.org/css-validator/#validate_by_input
 - https://validator.w3.org/#validate_by_input
 

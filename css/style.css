@@ -5,6 +5,9 @@
 
 
 
+/* Remove negative space on right of Page.....*/
+/* Bootstrap 4 default*/
+
 .carousel {
 	padding-left:0;
 	padding-right:0;
@@ -15,6 +18,10 @@
 	margin-left:0;
 	margin-right:0;
 }
+
+
+/*...........................................*/
+
 
 /*Container Colours..........................*/
 
@@ -65,6 +72,9 @@
 
 /*........................................*/
 
+
+
+
 /*Header Styles..............................*/
 
 	
@@ -81,13 +91,14 @@
   right:0;
   bottom:0;
   opacity: 0.2;
- /*  background-color: none;	 */	/* #e67e22; Reserverd for orange hue if needs be */ 
+  /*Originally used with #e67e22 bg colour to give orange/sepia hue*/ 
 }
 .overlay-effect-logo {
+  	
   position: absolute;
   top: 0;
   opacity: 0.2;
-/*   background-color: none;	 */	/* #e67e22; Reserverd for orange hue if needs be */ 	
+  /*Originally used with #e67e22 bg colour to give orange/sepia hue*/ 	
 
 }
 
@@ -131,7 +142,7 @@
 .fa-home:hover {
 	/*Hover action feedback*/
 	
-	color: #8b8e90;
+	color: #8b8e90; /* dark grey */
 }
 
 
@@ -148,21 +159,22 @@ button:focus {
 
 @media (min-width: 768px) {
 .nav-link {
-       font-size: 1.5em;
+       font-size: 2.5vw; /* improved UX with vw over em units */
+	}
+}
+
+
+
+@media (min-width: 820px) {
+.nav-link {
+       font-size: 2.7vw;
 	}
 }
 
 
 @media (min-width: 992px) {
 .nav-link {
-       font-size: 2em;
-	}
-}
-
-
-@media (min-width: 1280px) {
-.nav-link {
-       font-size: 2.5em;
+       font-size: 3vw;
 	}
 }
 
@@ -171,7 +183,10 @@ button:focus {
 /*...........................................*/
 
 
-/*Slider Styles..............................*/
+
+
+
+/*Carousel Styles............................*/
 
 
 .overlay-effect-carousel {
@@ -181,7 +196,7 @@ button:focus {
   left: 0;
   right: 0;
   opacity: 0.5;
-  background-color: #4a4a4f; 		/*Improves visibility of newsletter text*/
+  background-color: #4a4a4f; 		/*Improves visibility of newsletter text for greyscale deployment*/
 }
 
 .carousel-indicators li {
@@ -216,12 +231,8 @@ button:focus {
     border-radius: 65px;
 	width: 450px;
     color: #fff;
-/*  width: 400px;
-    color: #fafafa; */
 	left: 50%;
     text-align: center;
-/*  text-shadow: 0px 0px 6px rgba(0,0,0,0.99); */
-/* 	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.3); */
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     transition: 0.3s;
@@ -254,10 +265,8 @@ button:focus {
     border-radius: 16px;
 }
 .btn-secondary {
-    /* background-color: #33363a;		/*charcoal */
-	/* background-color: #3498db; 			/* blue */
-	/* background-color: #000; 			/* black */ 
-	background-color: rgba(52,27,27,0.502);		/*tranparent brown hue hex #341b1b80 changed to rgba for ie*/
+
+	background-color: rgba(52,27,27,0.502);		/*tranparent brown hue hex #341b1b80 changed to rgba for ie also tried #33363a, #3498db & #000 which are charcoal, blue & black respectively*/
 	border: none;
 }
 
@@ -266,6 +275,9 @@ button:focus {
     background-color: rgba(18, 57, 86, 0.5098039215686274); /* #12395682 changed to rgba for ie */
     border-color: #545b62;
 }	
+
+
+
 
 /*Newsletter Modal Styles.............................*/
 
@@ -307,8 +319,10 @@ button[type="button"] {
 
 
 
-
 /*...........................................*/
+
+
+
 
 
 /*Section Styles.............................*/
@@ -366,6 +380,9 @@ button[type="button"] {
 
 /*...........................................*/
 
+
+
+
 /*Article Styles...........................*/
 
 
@@ -378,6 +395,7 @@ button[type="button"] {
 
 }   
 
+/* discrete overlay classes to facilitate targeting of individual elements with differing effects & colours */
 
 .overlay-effect-book {
   position: absolute;
@@ -392,6 +410,7 @@ button[type="button"] {
 
 
 .overlay-effect-look {
+  
   position: absolute;
   top: 0;
   bottom: 0;
@@ -482,6 +501,8 @@ button[type="button"] {
 
 
 
+
+
 /*Footer Styles...........................*/
 
 .ftoverlaycontainer {
@@ -490,13 +511,14 @@ button[type="button"] {
 }
 
 .overlay-effect-footer {
+ /* Reserved for coloured and opacity overlayeffects */	
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   opacity: 0.2;
-  /* background-color: none; */		/* Reservered for coloured overlay */
+  
 }  
 
 .footer {
@@ -554,7 +576,7 @@ button[type="button"] {
 
 
 
-/*Booking Page Styles----------------------- */
+/*Booking Page Styles.......................*/
 
 
 .booking-outer {	
@@ -641,9 +663,11 @@ button[type="submit"] {
 
 
 
-/*Audio Page Styles------------------------- */
+/*Audio Page Styles......................... */
 
-/*Coding Snippet---------------------------- */
+
+
+/*Coding Snippet............................*/
 
 
 .audio-player {
@@ -742,12 +766,16 @@ button[type="submit"] {
 .ui-state-focus, 
 .ui-button:hover, 
 .ui-button:focus {
-	background: #495057;
+	background: #495057; /* targets progress bar slider colour */
 }
 
 /*...........................................*/
 
-/*Look Styles................................*/
+
+
+
+
+/*Look Page Styles...........................*/
 
 .video-gallery-outer {	
 	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.3);
@@ -769,6 +797,9 @@ button[type="submit"] {
 }
 
 /*...........................................*/
+
+
+
 
 /*About Styles................................*/
 
@@ -868,14 +899,7 @@ button[type="submit"] {
 	
 }
 
-/* Reserved for overlay effect */
-/* .about-modal-overlay {
-  position: absolute;
-  top: 0;
-  background-color: #fafafa;
-  opacity: 0.4;
-  
-} */
+
 
 .about-modal-content .modal-header h5{
 
