@@ -63,10 +63,14 @@ Note* Discrete  images were used for the carousel on each of the web pages.
 The files were uploaded to the Cloud9 IDE, which I used for version control, and an initial git commit was performed.
 The Cloud9 repo was then bound to a remote github repo and they were synchronised.
 The newsletter modal, booking submit form, listen and READme.md files were then completed and a second commit was initialised.
-Github Pages was then used to host and deploy the initial site constructs at the following url.
+Github Pages was then used to host and deploy the site at the following url:
 
 - https://kencormican.github.io/first-milestone-project/
 
+Please Note* After several commits to the local Cloud9 git repo and the initial push to GitHub I made some modifications to the ReadMe.md file directly on Github.
+This created a conflict between the local and remote repos.
+After several failed attempts to resolve the conflict using git commands I decided the cleanest and quickest way to resolve the issue was to delete the Cloud9 worskpace and reload it again from my local machine copy.
+This resulted in several commits being lost.
 
 ### Testing
 
@@ -76,13 +80,15 @@ During all phases of development I used Chrome Devtools to test the responsive d
 For instance I noted that the Nav bar text wrapped at before and after certain breakpoints so 
 used media queries to scale the fonts and transition more smoothly from one breakpoint to another.
 
-I also created multiple discrete webpages to test colour schemes and resposive layouts.
-The ones that were uploaded to github can be accessed at:
+I also created multiple discrete webpages to test colour schemes and responsive layouts.
+The ones that were uploaded to github can be accessed at in the test directory:
 
-- https://kencormican.github.io/first-milestone-project/index-coloured.html
-- https://kencormican.github.io/first-milestone-project/index-nav.html
+- https://kencormican.github.io/first-milestone-project/test/index-coloured.html
+- https://kencormican.github.io/first-milestone-project/test/index-nav.html
 
-#### Element Functionaly
+Note* Coloured theme was enhanced with coloured overlay elements with varying degrees of opacity.
+
+#### Element Functionality
 
 I initially used iframe container elements for the Video gallery, however, I encountered difficulty preventing the autoplay function 
 and ultimately decided to change to a video element to overcome the problem.
