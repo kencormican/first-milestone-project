@@ -75,6 +75,16 @@ This created a conflict between the local and remote repos.
 After several failed attempts to resolve the conflict using git commands I decided the cleanest and quickest way to resolve the issue was to delete the Cloud9 worskpace and reload it again from my local machine copy.
 This resulted in some of the commit granularity being lost.
 
+Following the project submission I noticed some minor dicrepancies between the original wireframe plan and the inal index.html page section element on the submission version.
+I created an independent git branch repo using the following command:
+- git checkout -b post-submission-modification
+
+I then made the necessary changes to the index page html and css, code commit the changes and pushed to the remote git hub branch repo using the following command:
+- git commit -m "post submission amendments to index.html, style.css and Readme.md"
+- git push -u origin  post-submission-modification
+
+
+
 ### Testing
 
 #### Responsive Design

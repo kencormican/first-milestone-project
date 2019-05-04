@@ -346,6 +346,8 @@ button[type="button"] {
 
 .section-text {
 	
+	margin-top:50px;
+	margin-bottom:20px;
 	font-size:1.3em; 
 	
 }
@@ -560,7 +562,7 @@ button[type="button"] {
 
 .footer-icons a i:hover {
 	/* Social icon responsive hover */
-	background-color: rgba(131,131,142,0.28); /* Hex Colour #83838e47 changed to RGBa value for IE rendering */
+	background-color: rgba(131,13;1,142,0.28); /* Hex Colour #83838e47 changed to RGBa value for IE rendering */
 	color:#fafafa;
 }
 
@@ -572,6 +574,46 @@ button[type="button"] {
 
 /*...........................................*/
 
+
+/* Index Page Styles ........................*/
+
+.btn-book {
+	
+	/* target book now button */
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: rgba(60, 49, 49, 0.2784313725490196);
+	padding: 10px;
+	border-radius: 20px;
+    color: #4a4a4f;
+	font-family: Roboto, sans-serif;
+	font-weight: 450;
+	font-size: 1.3em; 	
+}
+
+
+
+@media (min-width: 768px) {
+.btn-book {
+       font-size: 1.5em;
+	}
+}
+
+
+@media (min-width: 992px) {
+.btn-book {
+       font-size: 2em;
+	}
+}	
+
+@media (min-width: 560px) {
+.index-outer {
+	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.3);
+    border-radius: 10px;
+	}
+}	
+/*...........................................*/
 
 
 
